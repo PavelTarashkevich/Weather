@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (5.6.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Realm (10.28.3):
+    - Realm/Headers (= 10.28.3)
+  - Realm/Headers (10.28.3)
+  - RealmSwift (10.28.3):
+    - Realm (= 10.28.3)
+  - SVProgressHUD (2.2.5)
+  - Wormholy (1.6.5)
+
+DEPENDENCIES:
+  - Moya
+  - RealmSwift
+  - SVProgressHUD
+  - Wormholy
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - Realm
+    - RealmSwift
+    - SVProgressHUD
+    - Wormholy
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Realm: 64e66568d981de2496f81ecab2e1372b27dc7d58
+  RealmSwift: 29bcda3a1fa5613b358bd7ec638f5e12afc89c3a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
+
+PODFILE CHECKSUM: 3137f2971e4ad6ea5e3dc0b796e8eaf584931a8f
+
+COCOAPODS: 1.11.3
