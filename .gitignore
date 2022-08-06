@@ -1,0 +1,10 @@
+# Xcode
+xcuserdata
+DerivedData/
+*.xccheckout
+*.xcscmblueprint
+*.gcno
+
+# CocoaPods
+!Podfile.lock
+Pods/
