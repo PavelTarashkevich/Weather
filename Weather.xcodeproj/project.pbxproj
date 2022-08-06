@@ -13,10 +13,7 @@
 		CE53227C289D044D00EA70CC /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53227B289D044D00EA70CC /* CollectionViewExtensions.swift */; };
 		CE53227F289E642900EA70CC /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53227E289E642900EA70CC /* RootCoordinator.swift */; };
 		CE532281289E64B400EA70CC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE532280289E64B400EA70CC /* Coordinator.swift */; };
-		CE532284289E656000EA70CC /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE532283289E656000EA70CC /* UseCaseProvider.swift */; };
-		CE532287289E662600EA70CC /* RootCoordinatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE532286289E662600EA70CC /* RootCoordinatorProvider.swift */; };
 		CE532289289E675F00EA70CC /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE532288289E675F00EA70CC /* SplashCoordinator.swift */; };
-		CE53228B289E678F00EA70CC /* SplashCoordinatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53228A289E678F00EA70CC /* SplashCoordinatorProvider.swift */; };
 		CE53228D289E68D600EA70CC /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53228C289E68D600EA70CC /* BaseViewModel.swift */; };
 		CE532290289E6A0400EA70CC /* CityPresentableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53228F289E6A0400EA70CC /* CityPresentableModel.swift */; };
 		CE532293289E6A9000EA70CC /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE532292289E6A9000EA70CC /* City.swift */; };
@@ -25,9 +22,7 @@
 		CE532299289E6C7B00EA70CC /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE532298289E6C7B00EA70CC /* SplashViewModel.swift */; };
 		CE53229C289E6F0100EA70CC /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53229B289E6F0100EA70CC /* Array+Safe.swift */; };
 		CE53229E289E6F8D00EA70CC /* CityListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53229D289E6F8D00EA70CC /* CityListCoordinator.swift */; };
-		CE5322A0289E6FE100EA70CC /* CityListCoordinatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53229F289E6FE100EA70CC /* CityListCoordinatorProvider.swift */; };
 		CE5322A2289E70D800EA70CC /* CityDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5322A1289E70D800EA70CC /* CityDetailsCoordinator.swift */; };
-		CE5322A4289E711500EA70CC /* CityDetailsCoordinatorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5322A3289E711500EA70CC /* CityDetailsCoordinatorProvider.swift */; };
 		CE5322A6289E71B600EA70CC /* GetCitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5322A5289E71B600EA70CC /* GetCitiesUseCase.swift */; };
 		CE5322A8289E71EB00EA70CC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5322A7289E71EB00EA70CC /* Result.swift */; };
 		CE5322AA289E725300EA70CC /* GetCityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5322A9289E725300EA70CC /* GetCityUseCase.swift */; };
@@ -71,6 +66,7 @@
 		CE5800D028930813001E3DD9 /* CityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5800CF28930813001E3DD9 /* CityListViewModel.swift */; };
 		CE5800D228930841001E3DD9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5800D128930841001E3DD9 /* BaseViewController.swift */; };
 		CE5800D4289308BC001E3DD9 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5800D3289308BC001E3DD9 /* ViewControllerExtensions.swift */; };
+		F75D930B289EFB0600CE39C6 /* city.list.json in Resources */ = {isa = PBXBuildFile; fileRef = F75D930A289EFB0600CE39C6 /* city.list.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,10 +77,7 @@
 		CE53227B289D044D00EA70CC /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
 		CE53227E289E642900EA70CC /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		CE532280289E64B400EA70CC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		CE532283289E656000EA70CC /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
-		CE532286289E662600EA70CC /* RootCoordinatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinatorProvider.swift; sourceTree = "<group>"; };
 		CE532288289E675F00EA70CC /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		CE53228A289E678F00EA70CC /* SplashCoordinatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinatorProvider.swift; sourceTree = "<group>"; };
 		CE53228C289E68D600EA70CC /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		CE53228F289E6A0400EA70CC /* CityPresentableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPresentableModel.swift; sourceTree = "<group>"; };
 		CE532292289E6A9000EA70CC /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -93,9 +86,7 @@
 		CE532298289E6C7B00EA70CC /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		CE53229B289E6F0100EA70CC /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
 		CE53229D289E6F8D00EA70CC /* CityListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListCoordinator.swift; sourceTree = "<group>"; };
-		CE53229F289E6FE100EA70CC /* CityListCoordinatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListCoordinatorProvider.swift; sourceTree = "<group>"; };
 		CE5322A1289E70D800EA70CC /* CityDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsCoordinator.swift; sourceTree = "<group>"; };
-		CE5322A3289E711500EA70CC /* CityDetailsCoordinatorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsCoordinatorProvider.swift; sourceTree = "<group>"; };
 		CE5322A5289E71B600EA70CC /* GetCitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesUseCase.swift; sourceTree = "<group>"; };
 		CE5322A7289E71EB00EA70CC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		CE5322A9289E725300EA70CC /* GetCityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCityUseCase.swift; sourceTree = "<group>"; };
@@ -142,6 +133,7 @@
 		CE5800D128930841001E3DD9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CE5800D3289308BC001E3DD9 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		F59BC30C8CBFF5F0EEDD919E /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
+		F75D930A289EFB0600CE39C6 /* city.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.list.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				CE5322B6289E74FE00EA70CC /* ImportCitiesUseCase.swift */,
-				CE532283289E656000EA70CC /* UseCaseProvider.swift */,
 				CE5322A5289E71B600EA70CC /* GetCitiesUseCase.swift */,
 				CE5322A9289E725300EA70CC /* GetCityUseCase.swift */,
 				CE5322AE289E73CC00EA70CC /* GetCityWeatherUseCase.swift */,
@@ -207,17 +198,6 @@
 				CE5322BC289E77C600EA70CC /* SaveCitiesUseCase.swift */,
 			);
 			path = UseCases;
-			sourceTree = "<group>";
-		};
-		CE532285289E65E900EA70CC /* CoordinatorProviders */ = {
-			isa = PBXGroup;
-			children = (
-				CE532286289E662600EA70CC /* RootCoordinatorProvider.swift */,
-				CE53228A289E678F00EA70CC /* SplashCoordinatorProvider.swift */,
-				CE53229F289E6FE100EA70CC /* CityListCoordinatorProvider.swift */,
-				CE5322A3289E711500EA70CC /* CityDetailsCoordinatorProvider.swift */,
-			);
-			path = CoordinatorProviders;
 			sourceTree = "<group>";
 		};
 		CE53228E289E69E200EA70CC /* Presentable Models */ = {
@@ -343,6 +323,7 @@
 		CE5800A72892F8EA001E3DD9 = {
 			isa = PBXGroup;
 			children = (
+				F75D930A289EFB0600CE39C6 /* city.list.json */,
 				CE5800B22892F8EA001E3DD9 /* Weather */,
 				CE5322BE289E78A100EA70CC /* Platform */,
 				CE5800B12892F8EA001E3DD9 /* Products */,
@@ -364,7 +345,6 @@
 			children = (
 				CE5322AB289E72F000EA70CC /* Converters */,
 				CE53229A289E6ED800EA70CC /* Extensions */,
-				CE532285289E65E900EA70CC /* CoordinatorProviders */,
 				CE53228E289E69E200EA70CC /* Presentable Models */,
 				CE532276289D021800EA70CC /* Cells */,
 				CE5800C7289303BA001E3DD9 /* View Controllers */,
@@ -467,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5800C02892F8EB001E3DD9 /* LaunchScreen.storyboard in Resources */,
+				F75D930B289EFB0600CE39C6 /* city.list.json in Resources */,
 				CE532278289D028100EA70CC /* CityCell.xib in Resources */,
 				CE5800BD2892F8EB001E3DD9 /* Assets.xcassets in Resources */,
 				CE5800BB2892F8EA001E3DD9 /* Main.storyboard in Resources */,
@@ -535,12 +516,10 @@
 				CE5322E8289EA8BA00EA70CC /* IdentifiableExtensions.swift in Sources */,
 				CE5322EF289EA98E00EA70CC /* MoyaProviderExtension.swift in Sources */,
 				CE5800B62892F8EA001E3DD9 /* SceneDelegate.swift in Sources */,
-				CE53228B289E678F00EA70CC /* SplashCoordinatorProvider.swift in Sources */,
 				CE5322B9289E766D00EA70CC /* GetCitiesImportedUseCase.swift in Sources */,
 				CE5800D028930813001E3DD9 /* CityListViewModel.swift in Sources */,
 				CE5322A6289E71B600EA70CC /* GetCitiesUseCase.swift in Sources */,
 				CE5322AF289E73CC00EA70CC /* GetCityWeatherUseCase.swift in Sources */,
-				CE532287289E662600EA70CC /* RootCoordinatorProvider.swift in Sources */,
 				CE5322E3289EA80200EA70CC /* CityWeatherResponse.swift in Sources */,
 				CE5322AA289E725300EA70CC /* GetCityUseCase.swift in Sources */,
 				CE5322C0289E79E300EA70CC /* Identifiable.swift in Sources */,
@@ -551,7 +530,6 @@
 				CE5800C9289303DC001E3DD9 /* CityListViewController.swift in Sources */,
 				CE5322E5289EA82E00EA70CC /* CoordinatesResponse.swift in Sources */,
 				CE5322D0289EA64400EA70CC /* CItyWeatherRequest.swift in Sources */,
-				CE5322A4289E711500EA70CC /* CityDetailsCoordinatorProvider.swift in Sources */,
 				CE5322BB289E779B00EA70CC /* SetCitiesImportedUseCase.swift in Sources */,
 				CE5322ED289EA92000EA70CC /* RealmExtension.swift in Sources */,
 				CE532290289E6A0400EA70CC /* CityPresentableModel.swift in Sources */,
@@ -566,7 +544,6 @@
 				CE5322EA289EA8E600EA70CC /* TargetTypeExtension.swift in Sources */,
 				CE5322B5289E74A700EA70CC /* CityWeatherPresentableModelConverter.swift in Sources */,
 				CE5322B7289E74FE00EA70CC /* ImportCitiesUseCase.swift in Sources */,
-				CE532284289E656000EA70CC /* UseCaseProvider.swift in Sources */,
 				CE53227C289D044D00EA70CC /* CollectionViewExtensions.swift in Sources */,
 				CE5322DC289EA76E00EA70CC /* RealmCityConverter.swift in Sources */,
 				CE5322DF289EA7AD00EA70CC /* CityResponse.swift in Sources */,
@@ -578,7 +555,6 @@
 				CE5322A8289E71EB00EA70CC /* Result.swift in Sources */,
 				CE53229E289E6F8D00EA70CC /* CityListCoordinator.swift in Sources */,
 				CE5322D5289EA6BC00EA70CC /* WeatherConfig.swift in Sources */,
-				CE5322A0289E6FE100EA70CC /* CityListCoordinatorProvider.swift in Sources */,
 				CE532293289E6A9000EA70CC /* City.swift in Sources */,
 				CE5800CD289306A1001E3DD9 /* SplashViewController.swift in Sources */,
 			);
