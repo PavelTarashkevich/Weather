@@ -10,7 +10,7 @@ import Moya
 import Alamofire
 
 struct WeatherConfig {
-  static let appId = "afbaa3d091555716c3162421038d0555"
+  static let appId = "48e29861fa838dd1b225233f647e28f5"
   static let url = "https://api.openweathermap.org/data/2.5"
 
   static func defaultProvider<TargetType>() -> MoyaProvider<TargetType> {
