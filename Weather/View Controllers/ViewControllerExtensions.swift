@@ -25,7 +25,7 @@ extension Storyboarded where Self: UIViewController {
   }
 
   static func storyboard() -> UIStoryboard {
-    return UIStoryboard(name: "Main", bundle: Bundle.main)
+    return UIStoryboard(name: "Main", bundle: nil)
   }
 
   static func initiate() -> Self {

@@ -10,7 +10,7 @@ import Foundation
 class SetCitiesImportedUseCase {
   var repository: SettingsRepositoryProtocol
 
-  init(repository: SettingsRepositoryProtocol) {
+  init(repository: SettingsRepositoryProtocol = SettingsRepository()) {
     self.repository = repository
   }
 

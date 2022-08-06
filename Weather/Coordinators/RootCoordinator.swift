@@ -8,17 +8,8 @@
 import Foundation
 import UIKit
 
-
 class RootCoordinator: Coordinator {
-  let useCaseProvider: UseCaseProvider
-  let coordinatorProvider: RootCoordinatorProviderType
-
-  init(window: UIWindow,
-       useCaseProvider: UseCaseProvider,
-       coordinatorProvider: RootCoordinatorProvider) {
-    self.useCaseProvider = useCaseProvider
-    self.coordinatorProvider = coordinatorProvider
-
+  override init(window: UIWindow) {
     super.init(window: window)
   }
 
@@ -30,7 +21,7 @@ class RootCoordinator: Coordinator {
 private extension RootCoordinator {
   func toSplashScreen() {
     guard let window = window else { fatalError() }
-    let coordinator = coordinatorProvider.makeSplashCoordinator(window: window, delegate: self)
+    let coordinator = SplashCoordinator(window: window, delegate: self)
     childStarted(coordinator)
     coordinator.start()
   }
@@ -38,7 +29,7 @@ private extension RootCoordinator {
   func toCityList() {
     let navigationController = UINavigationController()
     window?.rootViewController = navigationController
-    let coordinator = coordinatorProvider.makeCityListCoordinator(navigationController: navigationController)
+    let coordinator = CityListCoordinator(navigationController: navigationController)
     childStarted(coordinator)
     coordinator.start()
   }

@@ -10,7 +10,7 @@ import Foundation
 class GetCityWeatherUseCase {
   let repository: WeatherRepositoryProtocol
 
-  init(repository: WeatherRepositoryProtocol) {
+  init(repository: WeatherRepositoryProtocol = WeatherRepository()) {
     self.repository = repository
   }
 

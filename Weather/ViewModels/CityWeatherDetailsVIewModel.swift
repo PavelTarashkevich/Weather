@@ -32,7 +32,7 @@ class CityWeatherDetailsViewModel: BaseViewModel, CityWeatherDetailsViewModelTyp
   }
 
   init(city: CityType,
-       getCityWeatherUseCase: GetCityWeatherUseCase,
+       getCityWeatherUseCase: GetCityWeatherUseCase = GetCityWeatherUseCase(),
        converter: CityWeatherPresentableModelConverterType = CityWeatherPresentableModelConverter()) {
     self.city = city
     self.getCityWeatherUseCase = getCityWeatherUseCase

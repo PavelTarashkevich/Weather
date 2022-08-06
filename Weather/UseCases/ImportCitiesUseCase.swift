@@ -7,18 +7,16 @@
 
 import Foundation
 
-
-
 class ImportCitiesUseCase {
   let repository: ImportCityRepositoryProtocol
   let getCitiesImported: GetCitiesImportedUseCase
   let setCitiesImported: SetCitiesImportedUseCase
   let saveCitiesUseCase: SaveCitiesUseCase
 
-  init(repository: ImportCityRepositoryProtocol,
-       getCitiesImported: GetCitiesImportedUseCase,
-       setCitiesImported: SetCitiesImportedUseCase,
-       saveCitiesUseCase: SaveCitiesUseCase) {
+  init(repository: ImportCityRepositoryProtocol = ImportCityRepository(),
+       getCitiesImported: GetCitiesImportedUseCase = GetCitiesImportedUseCase(),
+       setCitiesImported: SetCitiesImportedUseCase = SetCitiesImportedUseCase(),
+       saveCitiesUseCase: SaveCitiesUseCase = SaveCitiesUseCase()) {
     self.repository = repository
     self.getCitiesImported = getCitiesImported
     self.setCitiesImported = setCitiesImported

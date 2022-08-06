@@ -22,7 +22,7 @@ class SplashViewModel: BaseViewModel, SplashViewModelType {
 
   let importCitiesUseCase: ImportCitiesUseCase
 
-  init(importCitiesUseCase: ImportCitiesUseCase) {
+  init(importCitiesUseCase: ImportCitiesUseCase = ImportCitiesUseCase()) {
     self.importCitiesUseCase = importCitiesUseCase
   }
 

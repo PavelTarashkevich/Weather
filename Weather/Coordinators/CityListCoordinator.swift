@@ -9,18 +9,14 @@ import Foundation
 import UIKit
 
 class CityListCoordinator: Coordinator {
-  let coordinatorProvider: CityListCoordinatorProviderType
-
-  init(navigationController: UINavigationController,
-       coordinatorProvider: CityListCoordinatorProviderType) {
-    self.coordinatorProvider = coordinatorProvider
-
+  override init(navigationController: UINavigationController) {
     super.init(navigationController: navigationController)
   }
 
   override func start() {
-    let viewModel = coordinatorProvider.makeViewModel()
-    let viewController = coordinatorProvider.makeViewController(viewModel: viewModel)
+    let viewModel = CityListViewModel()
+    let viewController = CityListViewController.initiate()
+    viewController.viewModel = viewModel
 
     viewModel.bind(self) { [weak self] action in
       switch action {
@@ -46,7 +42,7 @@ private extension CityListCoordinator {
   func toDetails(for city: CityType) {
     guard let navigationController = navigationController else { return }
 
-    let coordinator = coordinatorProvider.makeCityDetailsCoordinator(navigationController: navigationController, delegate: self)
+    let coordinator = CityDetailsCoordinator(navigationController: navigationController, delegate: self)
     childStarted(coordinator)
     coordinator.start(with: city)
   }

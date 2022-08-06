@@ -9,7 +9,7 @@
 import UIKit
 
 class CityListViewController: BaseViewController {
-    var viewModel: CityListViewModelType!
+  var viewModel: CityListViewModelType!
 
   @IBOutlet var loadingView: UIView!
   @IBOutlet var tableView: UITableView!
