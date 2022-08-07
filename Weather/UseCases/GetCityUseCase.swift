@@ -10,7 +10,7 @@ import Foundation
 class GetCityUseCase {
   let repository: CityRepositoryProtocol
 
-  init(repository: CityRepositoryProtocol) {
+  init(repository: CityRepositoryProtocol = CityRepository()) {
     self.repository = repository
   }
 

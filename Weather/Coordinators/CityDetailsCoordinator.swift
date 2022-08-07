@@ -15,20 +15,17 @@ protocol CityDetailsCoordinatorDelegate: AnyObject {
 class CityDetailsCoordinator: Coordinator {
   typealias Delegate = CityDetailsCoordinatorDelegate
   weak var delegate: Delegate?
-  let coordinatorProvider: CityDetailsCoordinatorProviderType
 
-  init(navigationController: UINavigationController,
-       delegate: Delegate,
-       coordinatorProvider: CityDetailsCoordinatorProviderType) {
+  init(navigationController: UINavigationController, delegate: Delegate) {
     self.delegate = delegate
-    self.coordinatorProvider = coordinatorProvider
 
     super.init(navigationController: navigationController)
   }
 
   func start(with city: CityType) {
-    let viewModel = coordinatorProvider.makeViewModel(with: city)
-    let viewController = coordinatorProvider.makeViewController(viewModel: viewModel)
+    let viewModel = CityWeatherDetailsViewModel(city: city)
+      let viewController = CityDetailsViewController.initiate()
+    viewController.viewModel = viewModel
 
     viewModel.bind(self) { [weak self] action in
       guard let self = self else { return }

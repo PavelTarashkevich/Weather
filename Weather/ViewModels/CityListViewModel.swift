@@ -24,7 +24,7 @@ protocol CityListViewModelType: BaseViewModelType {
 
 class CityListViewModel: BaseViewModel, CityListViewModelType {
   let getCitiesUseCase: GetCitiesUseCase
-  let getCityUseCase: GetCitiesUseCase
+  let getCityUseCase: GetCityUseCase
   let converter: CityPresentableModelConverterType
 
   private(set) var items: [CityPresentableModel] = [] {
@@ -33,8 +33,8 @@ class CityListViewModel: BaseViewModel, CityListViewModelType {
     }
   }
 
-  init(getCitiesUseCase: GetCitiesUseCase,
-       getCityUseCase: GetCitiesUseCase,
+  init(getCitiesUseCase: GetCitiesUseCase = GetCitiesUseCase(),
+       getCityUseCase: GetCityUseCase = GetCityUseCase(),
        converter: CityPresentableModelConverterType = CityPresentableModelConverter()) {
     self.getCitiesUseCase = getCitiesUseCase
     self.getCityUseCase = getCityUseCase

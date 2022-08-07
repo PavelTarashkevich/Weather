@@ -15,20 +15,17 @@ protocol SplashCoordinatorDelegate: AnyObject {
 class SplashCoordinator: Coordinator {
   typealias Delegate = SplashCoordinatorDelegate
   weak var delegate: Delegate?
-  let coordinatorProvider: SplashCoordinatorProviderType
 
-  init(window: UIWindow,
-       delegate: Delegate,
-       coordinatorProvider: SplashCoordinatorProviderType) {
+  init(window: UIWindow, delegate: Delegate) {
     self.delegate = delegate
-    self.coordinatorProvider = coordinatorProvider
 
     super.init(window: window)
   }
 
   override func start() {
-    let viewModel = coordinatorProvider.makeViewModel()
-    let viewController = coordinatorProvider.makeViewController(viewModel: viewModel)
+    let viewModel = SplashViewModel()
+    let viewController = SplashViewController.initiate()
+    viewController.viewModel = viewModel
 
     viewModel.bind(self) { action in
       switch action {
@@ -42,5 +39,6 @@ class SplashCoordinator: Coordinator {
     }
 
     window?.rootViewController = viewController
+    window?.makeKeyAndVisible()
   }
 }
